@@ -1,0 +1,510 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+a,
+input[type='submit']{
+    text-decoration: none;
+    color: #333;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+i{
+    font-size: 1.5rem;
+}
+
+textarea,
+input,
+fieldset,
+select {
+    border: none;
+    background: none;
+    outline: none;
+
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+}
+
+
+input,
+textarea,
+select {
+   border: 1px hsla(0, 0%, 40%, 0.4) solid;
+   padding: 1rem 2rem;
+
+}
+
+h1{
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+h4{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+h5{
+    font-size: 1.2rem;
+}
+
+h6{
+    font-size: 1.2rem;
+    color: rgb(172, 172,172);
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+.layflexcolspacebt{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.layflexcoln{
+    display: flex;
+    flex-direction: column; 
+}
+
+.layflexrows{
+    display: flex;
+   
+}
+
+.layflexrowspa{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.maincontainer{
+    display:flex;
+    margin: 0;
+    justify-content: center;
+    padding: 4rem;
+    gap:5rem;
+ 
+}
+
+.checkout_container{
+    flex-basis: 65%;
+    /* background-color: yellow; */
+    /* height: 100vh; */
+    row-gap: 2rem;
+   
+}
+
+.yourorder_container{
+     flex-basis: 30%;
+    /* height: 100vh; */
+    row-gap: 3rem;
+   
+    
+}
+
+.billing_detailscon{
+    row-gap: 2rem; 
+    width: 96%;
+    /* background-color: aqua; */
+}
+
+.billlay{
+    width: 100%;
+    /* background-color: rgb(66, 170, 80); */
+    column-gap: 1rem; 
+}
+
+.widthfifty{
+    width: 50%;
+}
+
+.country{
+    width: 30%;
+}
+
+.city_town{
+     width: 70%;
+}
+
+.coupon{
+    row-gap: 1rem;
+}
+.couponcode{
+    column-gap: 1rem;
+}
+
+.couponcode input:nth-child(2){
+    background-color: black;
+    color: white;
+}
+
+
+.price_sizecon{
+    background-color: rgb(223, 220, 220);
+    row-gap: 0.1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: 0.5px solid rgb(223, 220, 220);
+}
+.pscontainer{
+    background-color: rgb(223, 220, 220);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.product_subt{
+    display: flex;
+    justify-content: space-between;
+    padding:1rem 1rem;
+
+}
+
+.pric_size{
+    justify-content: space-between;
+    padding:1rem 1rem ;
+    background-color: white;
+}
+
+.threep{
+   gap:2rem;
+}
+
+.imgcon{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+}
+img{
+     border-radius: 100%;  
+}
+
+.pric_size{
+    column-gap: 0.5rem;
+}
+
+.price_sizecon p{
+    color: #949292;
+}
+
+.subx{
+   padding-top:3rem;
+   padding-left: 1rem; 
+   padding-right: 1rem;
+   background-color: white;
+}
+
+.subx p{
+    color: black;
+}
+
+.totalfinal{
+    padding-top: 3rem;
+    padding-left: 1rem; 
+    padding-right: 1rem;
+    background-color: white;
+     border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.totalfinal p{
+    color: black;
+    
+}
+
+.paymentt{
+     background-color: rgb(223, 220, 220);
+     border-radius: 1rem 1rem 0rem 0rem;
+     padding: 1rem;
+}
+.payment{
+   background-color: white;
+   border-radius: 1rem;
+   border: solid rgb(223, 220, 220) 1px;
+   
+} 
+
+
+.payop1{
+    column-gap: 1rem;
+    padding: 1rem;
+    
+}
+
+.placeorder{
+    background-color: rgb(88, 88, 219);
+    text-align: center;
+    color: white;
+
+}
+
+.placeorder::placeholder{
+    color: white;
+}
+
+@media screen and (max-width: 700px){
+     .checkout_container {
+        /* flex-basis: 20%; */
+        /* width: 50%; */
+        align-items: center;
+        align-content: center;
+    } 
+
+    textarea,
+input,
+fieldset,
+select {
+  
+    font-size: 1rem;
+}
+
+input[type='submit']{
+    font-size: 1rem;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 3.2rem;
+    font-weight: 400;
+}
+
+h4{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+h5{
+    font-size: 1rem;
+}
+
+h6{
+    font-size: 1rem;
+    
+}
+
+p{
+    font-size: 1rem;
+}
+
+
+.maincontainer{
+    padding: 1rem;
+    gap:1rem;
+}
+
+
+::placeholder{
+    font-size: 1rem;
+}
+
+.billlay{
+    column-gap: 0.3rem;
+    width: 70%;
+  
+}
+
+.billing_detailscon{
+    align-items: center;
+}
+
+textarea{
+width: 16rem;
+height: 9rem;
+} 
+/* .yourorder_container{
+ width: 50%; 
+}  */
+.checktitle{
+    font-size: 2rem;
+}  
+
+.coupon{
+    align-items: center;
+}
+
+.couponcode{
+    width: 70%;
+} 
+
+.couponcode input{
+    width: 100%;
+    text-align: center;
+}
+
+}
+
+
+@media screen and (max-width: 600px){
+     .checkout_container {
+        /* flex-basis: 20%; */
+        /* width: 50%; */
+        align-items: center;
+        align-content: center;
+    } 
+
+    textarea,
+input,
+fieldset,
+select {
+  
+    font-size: 0.8rem;
+}
+
+input[type='submit']{
+    font-size: 0.8rem;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+h4{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+h5{
+    font-size: 0.8rem;
+}
+
+h6{
+    font-size: 0.8rem;
+    
+}
+
+p{
+    font-size: 0.8rem;
+}
+
+
+.maincontainer{
+    padding: 1rem;
+    gap:0.6rem;
+}
+
+
+::placeholder{
+    font-size: 0.7rem;
+}
+
+.billlay{
+    column-gap: 0.18rem;
+    width: 100%;
+  
+}
+
+.billing_detailscon{
+    align-items: center;
+}
+
+textarea{
+width: 80%;
+height: 5rem;
+} 
+.yourorder_container{
+ width: 50%;
+ padding-right: 0.7rem;
+ gap:1rem;
+} 
+.checktitle{
+    font-size: 1rem;
+} 
+.coupon{
+    align-items: center;
+}
+
+.couponcode{
+    width: 50%;
+    align-self: flex-start;
+    column-gap: 0.5rem;
+} 
+
+.couponcode input{
+    width: 100%;
+    text-align: center;
+}
+.imgcon{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+}
+
+/* .pric_size{
+    column-gap: 0.5rem;
+} */
+
+.subx{
+    padding-top: 1.5rem;
+}
+
+.country{
+    width: 40%;
+}
+
+.city_town{
+     width: 60%;
+}
+
+
+}
