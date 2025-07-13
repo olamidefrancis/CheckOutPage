@@ -391,6 +391,7 @@ height: 9rem;
         /* width: 50%; */
         align-items: center;
         align-content: center;
+        row-gap: 1rem;
     } 
 
     textarea,
@@ -456,6 +457,7 @@ p{
 
 .billing_detailscon{
     align-items: center;
+    row-gap: 1rem;
 }
 
 textarea{
@@ -485,8 +487,8 @@ height: 5rem;
     text-align: center;
 }
 .imgcon{
-    width: 5rem;
-    height: 5rem;
+    width: 5.5rem;
+    height: 5.5rem;
     border-radius: 100%;
 }
 
